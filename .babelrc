@@ -1,5 +1,7 @@
 {
   "presets": [
+    "@babel/env",
+    "@babel/react",
     [
       "es2015",
       {
@@ -10,14 +12,18 @@
     "stage-2"
   ],
   "plugins": [
-    "syntax-dynamic-import",
     "transform-decorators-legacy",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+    "syntax-dynamic-import",
     "transform-object-rest-spread",
-    "react-hot-loader/babel"
+    "react-hot-loader/babel",
   ],
   "env": {
     "test": {
       "plugins": [
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose" : true }],
         "transform-decorators-legacy",
         "transform-object-rest-spread",
         "istanbul"

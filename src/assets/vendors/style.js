@@ -8,7 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "./animate.css";
 import "./bootstrap-rtl.css";
 import "./loader.css";
-import 'react-big-calendar/lib/css/react-big-calendar.css';
+// import 'react-big-calendar/lib/css/react-big-calendar.css';
 import 'styles/bootstrap.scss'
 import 'styles/app.scss';
 import 'styles/app-rtl.scss';
+import './main.css';
