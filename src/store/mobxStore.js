@@ -20,9 +20,6 @@ class MobxStore {
             let currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
             const response = await this.formService.formAccordion(frmId, currentUser);
 
-            // runInAction(() => {
-            //     this.formData = response.data;
-            // });
             return response.data;
         } catch (error) {
             runInAction(() => {
@@ -36,9 +33,6 @@ class MobxStore {
             let currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
             const response = await this.formService.form(frmId, currentUser);
 
-            // runInAction(() => {
-            //     this.formData = response.data;
-            // });
             return response.data;
         } catch (error) {
             runInAction(() => {
@@ -53,9 +47,6 @@ class MobxStore {
             let currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
             const response = await this.formService.searchMapData(frmId, currentUser, item, format);
 
-            // runInAction(() => {
-            //     this.responseData = response.data;
-            // });
             return response;
         } catch (error) {
             runInAction(() => {
@@ -69,9 +60,6 @@ class MobxStore {
             let currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
             const response = await this.formService.searchData(frmId, currentUser, item);
 
-            // runInAction(() => {
-            //     this.responseData = response.data;
-            // });
             return response;
         } catch (error) {
             runInAction(() => {
@@ -87,9 +75,6 @@ class MobxStore {
             let currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
             const response = await this.formService.saveData(frmId, item, action, currentUser, regid);
 
-            // runInAction(() => {
-            //     this.responseData = response.data;
-            // });
             return response;
         } catch (error) {
             runInAction(() => {
@@ -103,9 +88,6 @@ class MobxStore {
             let currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
             const response = await this.formService.dataList(frmId, currentUser);
 
-            // runInAction(() => {
-            //     this.data = response.data.options;
-            // });
             return response.data;
         } catch (error) {
             runInAction(() => {
