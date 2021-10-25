@@ -57,9 +57,7 @@ class FormGenerator extends React.Component {
     }
 
     openModal() {
-        // this.setState({ modalIsOpen: true });
         this.props.mobxStore.items['IdClasificacion'] = true;
-
     }
 
     afterOpenModal() {
