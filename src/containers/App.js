@@ -3,7 +3,6 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import MomentUtils from '@date-io/moment';
 import { MuiPickersUtilsProvider } from 'material-ui-pickers';
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
 import { IntlProvider } from 'react-intl'
 import defaultTheme from './themes/defaultTheme';
 import "assets/vendors/style"
@@ -38,16 +37,9 @@ class App extends Component {
   render() {
     const { match, location, locale, authUser, initURL, isDirectionRTL } = this.props;
     if (location.pathname === '/') {
-      // if (authUser === null) {
-      //   return (<Redirect to={'/signin'} />);
-      // } else 
       if (initURL === '' || initURL === '/' || initURL === '/signin') {
         return (<Redirect to={'/signin'} />);
       }
-      // return ( <Redirect to={'/app/denuncias/denuncias-presenciales/denuncias-presenciales'}/> );
-      // } else {
-      //   return (<Redirect to={initURL} />);
-      // }
     }
     const applyTheme = createMuiTheme(defaultTheme);
 
