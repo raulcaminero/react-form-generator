@@ -16,7 +16,7 @@ export default class FormService {
 
     saveData(frmId, item, action, currentUser, regid) {
 
-        return Axios.post(`https://service.constantino.com.do/api/Form/Submit`,
+        return Axios.post(`MockURL`,
             JSON.stringify(item),
             {
                 headers: {
@@ -34,7 +34,7 @@ export default class FormService {
     }
 
     dataList(frmId, currentUser) {
-        return Axios.get(`https://service.constantino.com.do/api/Form/DataList`, {
+        return Axios.get(`MockURL`, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'instance': 'PRODUCCION',
@@ -50,7 +50,7 @@ export default class FormService {
     }
 
     searchMapData(frmId, currentUser, item, format) {
-        return Axios.post(`https://service.constantino.com.do/api/Form/DataMaps`,
+        return Axios.post(`MockURL`,
             JSON.stringify(item),
             {
                 headers: {
@@ -70,7 +70,7 @@ export default class FormService {
     }
 
     searchData(frmId, currentUser, item, regid) {
-        return Axios.post(`https://service.constantino.com.do/api/Form/DataReport`,
+        return Axios.post(`MockURL`,
             JSON.stringify(item),
             {
                 headers: {
@@ -92,14 +92,14 @@ export default class FormService {
         this.config.headers.frmId = btoa(frmId);
         this.config.headers.TokenKey = currentUser.token;
         this.config.headers.UserID = currentUser.userId;
-        return Axios.get(`https://service.constantino.com.do/api/Form/Form`, this.config);
+        return Axios.get(`MockURL`, this.config);
     }
 
     formAccordion(frmId, currentUser) {
         this.config.headers.frmId = btoa(frmId);
         this.config.headers.TokenKey = currentUser.token;
         this.config.headers.UserID = currentUser.userId;
-        return Axios.get(`https://service.constantino.com.do/api/Form/Accordion`, this.config);
+        return Axios.get(`MockURL`, this.config);
     }
 
     fieldsData(frmId, origenDatos, currentUser) {
@@ -107,6 +107,6 @@ export default class FormService {
         this.config.headers.lookup = btoa(origenDatos);
         this.config.headers.TokenKey = currentUser.token;
         this.config.headers.UserID = currentUser.userId;
-        return Axios.get(`https://service.constantino.com.do/api/Form/LookupSourceChild`, this.config);
+        return Axios.get(`MockURL`, this.config);
     }
 }
