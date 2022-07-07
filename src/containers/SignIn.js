@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { NotificationContainer, NotificationManager } from 'react-notifications';
@@ -18,16 +17,12 @@ import {
 } from 'actions/Auth';
 import LoginService from 'services/login_service'
 import { store } from 'react-notifications-component';
-import { signInUser } from 'sagas/Auth';
 
 const maxWidth = '90%';
 class SignIn extends React.Component {
   constructor() {
     super();
-    this.state = {
-      // email: 'demo@example.com',
-      // password: 'demo#123'
-    }
+    this.state = {}
   }
 
   store;
@@ -54,7 +49,6 @@ class SignIn extends React.Component {
         animationOut: ["animated", "fadeOut"],
         dismiss: {
           duration: 5000,
-          // onScreen: true
         }
       });
     }
@@ -120,15 +114,11 @@ class SignIn extends React.Component {
 
                   <div className="mb-3 d-flex align-items-center justify-content-between">
                     <Button className="btn-block" onClick={() => {
-                      // this.props.showAuthLoader();
                       this.signIn();
                     }} variant="contained" color="primary">
                       Ingresar a Constantino
                     </Button>
-
-
                   </div>
-
                 </fieldset>
               </form>
             </div>
