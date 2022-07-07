@@ -52,17 +52,11 @@ class FormGenerator extends React.Component {
         this.onChangeDatepicker = this.onChangeDatepicker.bind(this);
         this.onPanelChange = this.onPanelChange.bind(this);
         this.openModal = this.openModal.bind(this);
-        this.afterOpenModal = this.afterOpenModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
     }
 
     openModal() {
         this.props.mobxStore.items['IdClasificacion'] = true;
-    }
-
-    afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        // this.subtitle.style.color = '#f00';
     }
 
     closeModal() {
@@ -128,11 +122,6 @@ class FormGenerator extends React.Component {
         this.props.mobxStore.items[this.props.title + 'activeKey'] = this.props.title + '2';
         this.props.mobxStore.items['loading' + this.props.title] = true;
 
-        // this.props.mobxStore.items['currentItem' + this.props.title].forEach(element => {
-        //     if (moment.isMoment(element)) {
-        //         element = element.substring(0, 10)
-        //     };
-        // });
         const response = await this.props.mobxStore.postSearchMapDataAsync(
             this.props.formId,
             this.props.mobxStore.items['currentItem' + this.props.title],
@@ -158,11 +147,6 @@ class FormGenerator extends React.Component {
         this.props.mobxStore.items[this.props.title + 'activeKey'] = this.props.title + '2';
         this.props.mobxStore.items['loading' + this.props.title] = true;
 
-        // this.props.mobxStore.items['currentItem' + this.props.title].forEach(element => {
-        //     if (moment.isMoment(element)) {
-        //         element = element.substring(0, 10)
-        //     };
-        // });
         const response = await this.props.mobxStore.postSearchDataAsync(
             this.props.formId,
             this.props.mobxStore.items['currentItem' + this.props.title],
@@ -221,7 +205,6 @@ class FormGenerator extends React.Component {
                 animationOut: ["animated", "fadeOut"],
                 dismiss: {
                     duration: 5000,
-                    // onScreen: true
                 }
             });
         }
