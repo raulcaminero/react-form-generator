@@ -1,6 +1,7 @@
 /*Login Styles*/
 /*Login Styles*/
 
+
 .login-container {
   position: relative;
   height: 100%;
@@ -34,10 +35,36 @@
   padding: 10px 35px !important;
 }
 
+#logo {
+  background-image: url('../../../src/assets/images/logo.png');
+  background-size: cover; 
+  margin-left: 10px;
+  background-size: 50px 50px, 50px 50px;
+  background-repeat: no-repeat;
+}
+
+.app-main
+{
+  background-image: url('../../../src/assets/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.app-main-content-wrapper
+{
+  background-image:  url('../../../src/assets/images/title.png'), url('../../../src/assets/images/logo.png');
+  background-size: 43%, 37%;
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: center;
+  background-position-x: center, left;
+}
+
 .app-login-container {
   position: relative;
   max-width: 680px;
   width: 94%;
+
   margin: 0 auto;
 
   & .loader-view {
@@ -63,7 +90,7 @@
 .app-login-content {
   padding: 35px 35px 20px;
   width: 60%;
-  order: 1;
+  order: 2;
 
   @media screen and (max-width: 575px) {
     width: 100%;
@@ -92,7 +119,7 @@
   background-color: $app-primary;
   padding: 35px 35px 20px;
   width: 40%;
-  order: 2;
+  order: 1;
 
   @media screen and (max-width: 575px) {
     width: 100%;

@@ -6,7 +6,7 @@ const ProfileCard = () => {
 
       <div className="pi-header">
         <div className="card-image layer">
-          <img className="avatar-circle" src="https://via.placeholder.com/150x150" alt="Team Member"/>
+          <img className="avatar-circle" src="https://via.placeholder.com/150x150" alt="Team Member" />
         </div>
       </div>
       <div className="pi-content">
@@ -19,15 +19,15 @@ const ProfileCard = () => {
       <div className="pi-footer">
         <div className="icons-wrapper">
           <span className="icon facebook-icon jr-link">
-            <i className="zmdi zmdi-facebook zmdi-hc-fw zmdi-hc-lg"/>
+            <i className="zmdi zmdi-facebook zmdi-hc-fw zmdi-hc-lg" />
           </span>
 
           <span className="icon twitter-icon jr-link">
-            <i className="zmdi zmdi-twitter zmdi-hc-fw zmdi-hc-lg"/>
+            <i className="zmdi zmdi-twitter zmdi-hc-fw zmdi-hc-lg" />
           </span>
 
           <span className="icon linkedin-icon jr-link">
-            <i className="zmdi zmdi-linkedin zmdi-hc-fw zmdi-hc-lg"/>
+            <i className="zmdi zmdi-linkedin zmdi-hc-fw zmdi-hc-lg" />
           </span>
         </div>
       </div>

@@ -1,0 +1,102 @@
+.sidebaritem {
+    margin-bottom: 0px  !important;
+    margin-top: 0px !important;
+    background-color: #02103f !important;
+    padding-left: 0px !important;
+    color: white !important;
+}
+/* 
+.side-nav {
+    background-color: #02103f !important;
+} */
+
+/* .side-nav .user-profile {
+    background-color: #020b29 !important;
+} */
+
+.ant-menu-root.ant-menu-vertical, .ant-menu-root.ant-menu-vertical-left, .ant-menu-root.ant-menu-vertical-right, .ant-menu-root.ant-menu-inline {
+   background-color: #02103f;
+}
+
+.ant-layout, .ant-layout * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: unset;
+}
+/* 
+.ant-menu.ant-menu-sub.ant-menu-vertical > * {
+    background-color: gray !important;
+    color: blue !important;
+} */
+
+.MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: inherit !important;
+}
+
+    ul.nav-menu li ul > li > ul > li > a, ul.nav-menu li ul > li > ul > li > button {
+        padding: 0px 0px 0px 0px !important;
+    }
+
+.app-container.fixed-drawer .app-main-header {
+    width: auto !important;
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1) !important;
+    left: 250px;
+    right: 0;
+    background-color: #02103f !important;
+}
+
+.backGroundButtons {
+ background-color: rgba(1, 22, 43, 0.2) !important
+}
+
+.CustomLine {
+    color: black;
+    background-color:  black;
+    margin: 6px 0 6px 0 !important;
+    height: 2px;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    color: white !important;
+}
+
+.ant-menu-inline .ant-menu-submenu-title { 
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+ul.nav-menu li { 
+    margin-bottom: 0px;
+}
+
+.ant-collapse-content > .ant-collapse-content-box {
+    padding: 16px;
+    background-color: lightslategray !important;
+}
+
+.ant-menu-sub.ant-menu-inline > .ant-menu-item, .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+    height: 40px;
+    line-height: 40px;
+    list-style-position: inside;
+    list-style-type: disc;
+    padding-left: 32px !important;
+    opacity: 0.6;
+}
+
+/* Remove scrollbar */
+.app-main-content-wrapper {
+    padding-right: 17px !important;
+    /* box-sizing: content-box; */
+    /* box-sizing: content-box; */
+}
+
+.ant-spin-nested-loading > div > .ant-spin .ant-spin-text {
+    color: white !important;
+}
+
+.ant-spin-dot-item {
+    background-color: #623D33 !important;
+}

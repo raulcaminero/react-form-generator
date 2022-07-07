@@ -12,15 +12,7 @@ class SamplePage extends React.Component {
         <ContainerHeader match={this.props.match} title={<IntlMessages id="pages.MiPage" />}
         />
 
-        {/* <div className="d-flex justify-content-center">
-          <h1><IntlMessages id="pages.MiPage.description" />
-          </h1>
-        </div> */}
-
-
-
         <div className="row">
-
           <div className="col-md-3 form-group">
             <label>Label1</label>
             <Input className="form-control" type="text" />
@@ -46,7 +38,6 @@ class SamplePage extends React.Component {
             <Input className="form-control" type="text" />
           </div>
 
-
           <div className="col-md-3 form-group">
             <label>A favor de</label>
             <Input className="form-control" type="text" />
@@ -56,12 +47,8 @@ class SamplePage extends React.Component {
             <label>En contra de</label>
             <Input className="form-control" type="text" />
           </div>
-
-
         </div>
-
       </div>
-
     );
   }
 }
