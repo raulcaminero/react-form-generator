@@ -8,7 +8,7 @@ export default class LoginService {
     config = { headers: { 'Content-Type': 'application/json', 'accept': 'text/plain', 'Access-Control-Allow-Origin': '*' } };
 
     Login(password, username) {
-        return Axios.post(`https://service.constantino.com.do/api/auth/Login`, {
+        return Axios.post(`MockURL`, {
             'username': username,
             'Password': password,
             'FingerPrint': 'string',

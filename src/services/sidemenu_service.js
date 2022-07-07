@@ -16,7 +16,7 @@ export default class SideMenuService {
     Options(currentUser) {
         this.config.headers.TokenKey = currentUser.token;
         this.config.headers.UserID = currentUser.userId;
-        return Axios.get(`https://service.constantino.com.do/api/auth/Options`, this.config);
+        return Axios.get(`MockURL`, this.config);
     }
 
 }
