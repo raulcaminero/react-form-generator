@@ -92,14 +92,14 @@ export default class FormService {
         this.config.headers.frmId = btoa(frmId);
         this.config.headers.TokenKey = currentUser.token;
         this.config.headers.UserID = currentUser.userId;
-        return Axios.get(`https://service.constantino.com.do/api/Form/Form`, this.config);
+        return Axios.get(`MockURL`, this.config);
     }
 
     formAccordion(frmId, currentUser) {
         this.config.headers.frmId = btoa(frmId);
         this.config.headers.TokenKey = currentUser.token;
         this.config.headers.UserID = currentUser.userId;
-        return Axios.get(`https://service.constantino.com.do/api/Form/Accordion`, this.config);
+        return Axios.get(`MockURL`, this.config);
     }
 
     fieldsData(frmId, origenDatos, currentUser) {
@@ -107,6 +107,6 @@ export default class FormService {
         this.config.headers.lookup = btoa(origenDatos);
         this.config.headers.TokenKey = currentUser.token;
         this.config.headers.UserID = currentUser.userId;
-        return Axios.get(`https://service.constantino.com.do/api/Form/LookupSourceChild`, this.config);
+        return Axios.get(`MockURL`, this.config);
     }
 }
