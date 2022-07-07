@@ -16,7 +16,7 @@ export default class FormService {
 
     saveData(frmId, item, action, currentUser, regid) {
 
-        return Axios.post(`https://service.constantino.com.do/api/Form/Submit`,
+        return Axios.post(`MockURL`,
             JSON.stringify(item),
             {
                 headers: {
@@ -34,7 +34,7 @@ export default class FormService {
     }
 
     dataList(frmId, currentUser) {
-        return Axios.get(`https://service.constantino.com.do/api/Form/DataList`, {
+        return Axios.get(`MockURL`, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'instance': 'PRODUCCION',
@@ -50,7 +50,7 @@ export default class FormService {
     }
 
     searchMapData(frmId, currentUser, item, format) {
-        return Axios.post(`https://service.constantino.com.do/api/Form/DataMaps`,
+        return Axios.post(`MockURL`,
             JSON.stringify(item),
             {
                 headers: {
@@ -70,7 +70,7 @@ export default class FormService {
     }
 
     searchData(frmId, currentUser, item, regid) {
-        return Axios.post(`https://service.constantino.com.do/api/Form/DataReport`,
+        return Axios.post(`MockURL`,
             JSON.stringify(item),
             {
                 headers: {
